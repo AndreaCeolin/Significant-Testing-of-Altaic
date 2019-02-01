@@ -123,11 +123,10 @@ def corr(Ling1, Ling2):
     corr_table = Counter()
     for word1, word2 in zip(Ling1, Ling2):
         # skip in case of missing values
-        if word1 == 'NA' or word2 == 'NA':
-            continue
-        for ph1 in word1.split('-'):
-            for ph2 in word2.split('-'):
-                corr_table[(ph1, ph2)] += 1
+        if word1 != 'NA' and word2 != 'NA':
+            for ph1 in word1.split('-'):
+                for ph2 in word2.split('-'):
+                    corr_table[(ph1, ph2)] += 1
     #optional print: the total number of correspondences
     #print(sum(corr_table.values()))
     return corr_table
@@ -137,10 +136,9 @@ def distr(Ling1, Ling2):
     freq1 = []
     freq2 = []
     for letter1, letter2 in zip(Ling1, Ling2):
-        if letter1 == 'NA' or letter2 == 'NA':
-            continue
-        freq1.extend(letter1.split('-'))
-        freq2.extend(letter2.split('-'))
+        if letter1 != 'NA' and letter2 != 'NA':
+            freq1.extend(letter1.split('-'))
+            freq2.extend(letter2.split('-'))
     return [{n: float(freq1.count(n)) for n in freq1}, {n: float(freq2.count(n)) for n in freq2}]
 
 #calculate the binomial formula
