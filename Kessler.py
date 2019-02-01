@@ -181,7 +181,7 @@ def Osw(Ling1,Ling2):
     for i in range(10000):
         #create a shuffled list
         Ling2_rand= Ling2[:]
-        random.shuffle(Ling2)
+        random.shuffle(Ling2_rand)
         dist_all.append(distance(Ling1,Ling2_rand))
     dist_all = sorted(dist_all)
     #optional print: the average of the randomized distances
@@ -215,6 +215,8 @@ def simulation(Ling, borrowings):
             threshold = 'none'
     print('#')
     return threshold
+
+
 
 
 print('#####Table 1####')
