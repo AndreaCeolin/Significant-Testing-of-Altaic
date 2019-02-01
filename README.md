@@ -1,6 +1,7 @@
 # Significant-Testing-of-Altaic
-This repository contains the material used for the paper "Significant testing of the Altaic Family"
-There three Python scripts that reproduce the results of the paper:
+This repository contains the material used for the paper "Significant testing of the Altaic Family".
+
+There are three Python scripts that reproduce the results of the paper:
 
 1. **Kessler.py**: This script reproduces the analysis of Kessler and Lehtonen's (2006) algorithm on the wordlists of the article and print the relative tables.
 
