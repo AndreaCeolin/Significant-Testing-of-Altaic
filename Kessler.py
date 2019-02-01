@@ -180,7 +180,8 @@ def Osw(Ling1,Ling2):
     d = distance(Ling1,Ling2)
     for i in range(10000):
         #create a shuffled list
-        Ling2_rand= random.sample(Ling2, len(Ling2))
+        Ling2_rand= Ling2[:]
+        random.shuffle(Ling2)
         dist_all.append(distance(Ling1,Ling2_rand))
     dist_all = sorted(dist_all)
     #optional print: the average of the randomized distances
@@ -192,8 +193,10 @@ def Osw(Ling1,Ling2):
 #experiment on loanwords, Section 8
 def simulation(Ling, borrowings):
     #create two randomized list starting for the input list
-    Ling_rand = random.sample(Ling, len(Ling))
-    Ling_rand2 = random.sample(Ling, len(Ling))
+    Ling_rand = Ling[:]
+    Ling_rand2 = Ling[:]
+    random.shuffle(Ling_rand)
+    random.shuffle(Ling_rand2)
     p_values = []
     #integer variable needed to determine the saturation threshold. Initialize with any n > len(borrowings)
     threshold = 10
