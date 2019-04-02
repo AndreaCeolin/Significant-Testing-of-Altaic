@@ -9,4 +9,6 @@ There are three Python scripts that reproduce the results of the paper:
 
 3. **Correspondences.py**: This paper reproduces the analysis of Ringe's (1998) hypergeometric and Kessler (2001)'s R^2 algorithms on the wordlist of the article and print the relative tables.
 
+4. **Wordlists.pdf**: This file contains the Swadesh lists used for the six languages of the paper (English, Italian, Hindi, Turkish, Mongolian and Manchu)
+
 
