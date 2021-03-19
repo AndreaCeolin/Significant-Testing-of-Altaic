@@ -1,5 +1,8 @@
 # Significant-Testing-of-Altaic
-This repository contains the material used for the paper "Significant testing of the Altaic Family".
+This repository contains the material used for the paper:
+
+> Ceolin, A. (2019). Significant testing of the Altaic Family. Diachronica, 36(3), 299-336. https://doi.org/10.1075/dia.17007.ceo. 
+
 
 There are three Python scripts that reproduce the results of the paper:
 
